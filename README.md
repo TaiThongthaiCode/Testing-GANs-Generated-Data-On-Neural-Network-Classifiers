@@ -101,6 +101,7 @@ original github repo code.
 - Trained the dataset for ~24 hrs
 
 ### Rich, Tai, Sam: 05-15-19 (9hrs) 
+
 - Analyzed both generated cifar10 and mnist datasets
 - Hand-labeled mnist dataset (so painstaking) for preprocessing to analyze GANs
 - Found that when using generated mnist data to classify, the accuracy rate is ~25%
@@ -117,6 +118,16 @@ original github repo code.
   - Analyzed the data and created the graphs and manually inputted labels for mnist
   - Made a confusion matrix for cifar dataset
   - Charts can be found in the presentation slides (Link: https://docs.google.com/presentation/d/1CoAy7FHkWDutP8tS7Fc69cBH2EOUxFrGbFtYKE75pXc/edit?usp=sharing)
+
+
+
+
+Highlevel Mnist/Cifar steps:
+- Wrote a parsing file to read in manually encoded mnist labels/generated labels for cifar
+- Modified the CNN code we used so that it would take our GANs generated data
+- Plotted graphs of training loss and accuracies
+- Modified gans code so that it would return and save generated images as np arrays 
+- Wrote code to generate multiple sets of mnist datasets and concatenate them into one big dataset. Figured out how to turn the np array datasets into images.
 
 
 Cited Sources: https://github.com/King-Of-Knights/Keras-ACGAN-CIFAR10/blob/master/README.md
