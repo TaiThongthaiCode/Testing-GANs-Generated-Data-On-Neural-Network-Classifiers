@@ -114,3 +114,15 @@ original github repo code.
     - Instead of loading the real cifar train data, load our generated dataset using    
       - X_train = np.load("X_train_cifar10.npy")
       - y_train = np.load("y_train_cifar10.npy”)
+
+
+
+Cited Sources: https://github.com/King-Of-Knights/Keras-ACGAN-CIFAR10/blob/master/README.md
+               https://www.quora.com/How-do-I-extract-data-from-Excel-into-NumPy
+               https://arxiv.org/abs/1806.02920
+               https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
+               https://github.com/jacobgil/keras-dcgan/blob/master/dcgan.py?fbclid=IwAR3qgjN5ZrcyCruhw3S3IgVd3b02NsIGO-sMi-2dQKLRNTyHZxFVVI7q1pU
+               https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense
+               https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-      ReLU-in-deep-learning
+               https://machinelearningmastery.com/visualize-deep-learning-neural-network-model-keras/
+               
