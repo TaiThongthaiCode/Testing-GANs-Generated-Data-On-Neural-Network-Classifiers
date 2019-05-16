@@ -62,6 +62,19 @@ original github repo code.
 - Tried to understand the code that we git pulled
 - Fine-tuned parameters to better our results
 - Trial-by-error many of the parameters until the codes ran smoothly on the lab computers
+- Cifar-10 Steps:
+  - Cloned the Gans repo.
+    -  https://github.com/King-Of-Knights/Keras-ACGAN-CIFAR10
+    - (Minibatch.py and cifar10.py is required)
+    - renamed cifar10.py as gans.py
+  - Cloned the Lab 07 repo.
+  - Changed the code such that the weights only save every 50 epoch to keep disk quota low.
+  - Ran the code for a day and a half (1000 epochs).
+  - Went back into the code and loaded back the weights for the 951th epoch (didn’t end up saving the 1000th epoch)
+  - Make load_weight = True and load_epoch = 951 (initially set to False)
+  - Added “np.save('cifar_image_data_{0:03d}'.format(load_epoch), generated_images)” to save the generated dataset as a npy array. Saved 10 generated npy arrays to have 1000 train examples.
+  - Made a file called make_dataset.py which combines the npy arrays into one array. Also creates the labels.
+  - Creates the final png which contains 1000 images.
 
 ### Sam, Tai, Rich: 05-12-19 (~39.5hrs training; 6hrs understanding/tuning/working)
 - Ran cifar-10 all day (for two days) and trained
@@ -70,8 +83,7 @@ original github repo code.
   - After reading through the code and trying to understand, we found that the code was saving its weights
   and other necessary parameters along with the history of training every epoch. This turned out to be the reason
   why we ran out of memory so fast (even with the virtual machine).
-  - We ended up changing code around so it wouldn't save every epoch, but after every few hundred epochs are so. A few parts is
-  done by trial and error
+  - We ended up changing code around so it wouldn't save every epoch, but after every few hundred epochs are so. A few parts       is done by trial and error
 - Continued running code.
 - We found that the images were "plateau-ing" in terms of better quality, but we continued to train
 - Found that we were able to recognize the images from afar... probably because cifar-10 data is 32 pixels by 32 pixels
@@ -88,7 +100,7 @@ original github repo code.
 - Learned .npy file types
 - Trained the dataset for ~24 hrs
 
-### Rich, Tai, Sam: 05-15-19 (9hrs)
+### Rich, Tai, Sam: 05-15-19 (9hrs) 
 - Analyzed both generated cifar10 and mnist datasets
 - Hand-labeled mnist dataset (so painstaking) for preprocessing to analyze GANs
 - Found that when using generated mnist data to classify, the accuracy rate is ~25%
@@ -97,3 +109,8 @@ original github repo code.
   match the generated image. The result wasn't too much better, eliminating human error
   - Created and finalized the powerpoint presentation
   - Used the generated images of both cifar-10 and mnist
+  - Cifar-10 Changes:
+    - With the new npy arrays (from 5/10), we can load them into our lab07. 
+    - Instead of loading the real cifar train data, load our generated dataset using    
+      - X_train = np.load("X_train_cifar10.npy")
+      - y_train = np.load("y_train_cifar10.npy”)
