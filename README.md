@@ -116,7 +116,7 @@ original github repo code.
       - y_train = np.load("y_train_cifar10.npy”)
   - Analyzed the data and created the graphs and manually inputted labels for mnist
   - Made a confusion matrix for cifar dataset
-  - Charts can be found in the presentation slides (in the repo)
+  - Charts can be found in the presentation slides (Link: https://docs.google.com/presentation/d/1CoAy7FHkWDutP8tS7Fc69cBH2EOUxFrGbFtYKE75pXc/edit?usp=sharing)
 
 
 Cited Sources: https://github.com/King-Of-Knights/Keras-ACGAN-CIFAR10/blob/master/README.md
