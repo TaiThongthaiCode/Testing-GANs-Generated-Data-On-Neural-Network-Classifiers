@@ -36,7 +36,7 @@ Project Title: Simulating Datasets with GANs
 - Changed some code and successfully read cifar-10
 - Altered parameters to better fit cifar-10
 - Result after 10000 epochs:
-![99800_old](99800_old.png)
+![99800_old](mnist_init.png)
 
 - Image isn't successfully training -- might need to switch to a better format/github repo
 
@@ -89,9 +89,9 @@ original github repo code.
 - Found that we were able to recognize the images from afar... probably because cifar-10 data is 32 pixels by 32 pixels
 - Here are some of the results:
   - MNIST: (After 1000 epochs)
-  ![60634409_614797952365796_8583153272431312896_n](60634409_614797952365796_8583153272431312896_n.png)
+  ![60634409_614797952365796_8583153272431312896_n](mnist_final.png)
   - Cifar-10: (After 1000 epochs)
-  ![plot_epoch_1000_generated](plot_epoch_1000_generated.png)
+  ![plot_epoch_1000_generated](cifar_final.png)
 
 ### Tai, Sam, Rich: 05-13-19 (~24hrs training; 2hrs understanding/working)
 - Figured out how to save weights
@@ -114,7 +114,9 @@ original github repo code.
     - Instead of loading the real cifar train data, load our generated dataset using    
       - X_train = np.load("X_train_cifar10.npy")
       - y_train = np.load("y_train_cifar10.npy”)
-
+  - Analyzed the data and created the graphs and manually inputted labels for mnist
+  - Made a confusion matrix for cifar dataset
+  - Charts can be found in the presentation slides (in the repo)
 
 
 Cited Sources: https://github.com/King-Of-Knights/Keras-ACGAN-CIFAR10/blob/master/README.md
