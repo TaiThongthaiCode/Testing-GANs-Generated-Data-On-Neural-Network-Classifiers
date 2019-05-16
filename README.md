@@ -123,6 +123,6 @@ Cited Sources: https://github.com/King-Of-Knights/Keras-ACGAN-CIFAR10/blob/maste
                https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
                https://github.com/jacobgil/keras-dcgan/blob/master/dcgan.py?fbclid=IwAR3qgjN5ZrcyCruhw3S3IgVd3b02NsIGO-sMi-2dQKLRNTyHZxFVVI7q1pU
                https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense
-               https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-      ReLU-in-deep-learning
+               https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-ReLU-in-deep-learning
                https://machinelearningmastery.com/visualize-deep-learning-neural-network-model-keras/
                
