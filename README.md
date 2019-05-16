@@ -77,9 +77,9 @@ original github repo code.
 - Found that we were able to recognize the images from afar... probably because cifar-10 data is 32 pixels by 32 pixels
 - Here are some of the results:
   - MNIST: (After 1000 epochs)
-  ![60634409_614797952365796_8583153272431312896_n](60634409_614797952365796_8583153272431312896_n)
+  ![60634409_614797952365796_8583153272431312896_n](60634409_614797952365796_8583153272431312896_n.png)
   - Cifar-10: (After 1000 epochs)
-  ![plot_epoch_1000_generated](plot_epoch_1000_generated)
+  ![plot_epoch_1000_generated](plot_epoch_1000_generated.png)
 
 ### Tai, Sam, Rich: 05-13-19 (~24hrs training; 2hrs understanding/working)
 - Figured out how to save weights
